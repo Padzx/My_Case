@@ -1,38 +1,161 @@
-.App {
-  text-align: center;
+
+.title {
+  /* Estilos para o título principal */
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 250px;
+  font-family: Arial, Helvetica, sans-serif;
+
+  background-image: linear-gradient(to right, #8c00ff, #feb47b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.animated-text {
+  /* Estilos para a área de texto animado */
+  font-size: 24px; /* Tamanho da fonte */
+  font-weight: bold; /* Peso da fonte */
+  margin-left: 290px;
+  margin-top: -20px;
+  font-family: Arial, Helvetica, sans-serif;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.animated-text span {
+  /* Estilos para as palavras animadas */
+  overflow: hidden; /* Ocultar qualquer conteúdo que extrapole o contêiner */
+  border-right: 2px solid #000; /* Borda do cursor */
+  font-family: Arial, Helvetica, sans-serif;
+  white-space: nowrap; /* Garante que o texto não quebre a linha */
+  margin-right: 5px; /* Espaçamento à direita do cursor */
+  animation: typing 1.5s steps(25) infinite, blink 1s infinite alternate; /* Aplicar animação de digitação */
+
+}
+
+.animated-text span:last-child {
+  border-right: none; /* Remover a borda do último elemento */
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  40% {
+    width: 10ch; /* Tamanho da palavra 'Developer' */
+  }
+  60% {
+    width: 20ch; /* Tamanho da palavra 'Data Analytics' */
+  }
+  80% {
+    width: 25ch; /* Tamanho da palavra 'Devops' */
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.dark-mode {
+  background-color: #000000;
+  color: #fff;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.light-mode {
+  background-color: #fff;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.icon-container {
+  position: absolute;
+  margin-left: 950px;
+  width: 100px;
+  transform: translateX(-50%);
+  margin-top: -250px;
+  position: absolute;
+}
+
+.icon {
+  display: inline-block;
+  font-size: 25px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.icon.active {
+  color: #ffc107; /* Amarelo */
+}
+
+.animated-text {
+  margin-top: 50px; /* Ajuste conforme necessário */
+}
+
+/* CSS */
+.toggle-button {
+  background-color: transparent; /* Faz o botão totalmente transparente */
+  border: 2px solid transparent; /* Adiciona uma borda transparente */
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  margin-top: -8px;
+  margin-left: -90px;
+  transition: background-color 0.3s; /* Adiciona uma transição suave para a mudança de cor de fundo */
+  position: absolute;
+  overflow: visible; /* Permite que os ícones sobressaiam além do botão */
+}
+
+/* Adiciona sombra com degradê para criar o efeito de borda em degradê */
+.toggle-button::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+  border-radius: 20px;
+  background: linear-gradient(to bottom right, #8c00ff, #f39c12); /* Adiciona um degradê linear */
+  z-index: -1; /* Coloca a sombra por baixo do botão */
+}
+
+/* Adiciona estilos ao botão quando o mouse está sobre ele */
+.toggle-button:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Adiciona uma leve coloração ao fundo ao passar o mouse */
+}
+
+/* Adiciona estilos aos ícones para sobressair além do botão */
+.icon {
+  position: relative;
+  z-index: 1; /* Coloca os ícones acima do botão */
+}
+
+.icon-work-gt {
+  margin-left: -900px;
+  margin-top: 85px;
+  position: absolute;
+  cursor: pointer;
+  mask-image: linear-gradient(to right, transparent, #ffffff); /* Cria uma máscara de degradê transparente para o ícone */
+}
+
+.icon-work-gt:hover {
+  mask-image: linear-gradient(to right, #ff8a00, #da1b60); /* Inverte as cores do degradê quando o mouse passa sobre o ícone */
+}
+
+.icon-work-li {
+  margin-top: 85px;
+  margin-left: -850px;
+  position: absolute;
+  cursor: pointer;
+  mask-image: linear-gradient(to right, transparent, #ffffff); /* Cria uma máscara de degradê transparente para o ícone */
+}
+
+.icon-work-li:hover {
+  mask-image: linear-gradient(to right, #0e76a8, #25d366); /* Inverte as cores do degradê quando o mouse passa sobre o ícone */
 }
