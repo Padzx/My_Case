@@ -32,7 +32,7 @@ const App = () => {
           setCurrentWordIndex((prevIndex) => (prevIndex + 1) % words.length);
         }
       }
-    }, 100); // Ajuste a velocidade da animação conforme necessário
+    }, 100); // Velocity Typing //
 
     return () => clearInterval(wordInterval);
   }, [currentWord, currentWordIndex, typingForward, words]);
