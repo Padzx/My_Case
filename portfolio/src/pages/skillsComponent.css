@@ -29,17 +29,140 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.container-frontend{
-
-    width: 250px;
-    margin-top: -50px;
-    margin-left:190px;
-    background-color: #333;
+.container-frontend {
+  width: 400px;
+  border-radius: 10px;
+  margin-top: -50px;
+  margin-left: 190px;
+  height: 365px;
+  background-color: #333;
+  animation: slideIn 0.5s ease forwards; /* Adiciona a animação slideIn */
 }
+
+
+
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px); /* Desliza para cima */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Sem deslocamento vertical */
+  }
+}
+
 
 .container-frontend h1 {
     
     font-size: 35px;
+    background: linear-gradient(to right, #D75413, #682666);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-family: Arial, Helvetica, sans-serif;
-    margin-left: 50px;
+    margin-left: 120px;
+}
+
+/* ------ Icons Frontend --------*/
+
+.html-icon {
+  margin-top: 110px;
+  position: absolute;
+  font-size: 40px;
+  margin-left: 20px;
+  color:#D75413;
+  transition: color 0.3s ease; /* Adiciona uma transição suave para a mudança de cor */
+}
+
+.html-icon:hover {
+  color: #682666; /* Define a cor quando o mouse está sobre o ícone */
+}
+
+
+.css-icon{
+
+  
+  position: absolute;
+  font-size: 40px;
+  margin-top: 170px;
+  margin-left: 20px;
+  color:#D75413;
+  transition: color 0.3s ease; /* Adiciona uma transição suave para a mudança de cor */
+}
+
+.css-icon:hover {
+  color: #682666; /* Define a cor quando o mouse está sobre o ícone */
+}
+
+.js-icon{
+
+
+  position: absolute;
+  font-size: 40px;
+  margin-top: 50px;
+  margin-left: 20px;
+  color:#D75413;
+  transition: color 0.3s ease; /* Adiciona uma transição suave para a mudança de cor */
+}
+
+.js-icon:hover {
+  color: #682666; /* Define a cor quando o mouse está sobre o ícone */
+}
+
+.react-icon{
+
+  position: absolute;
+  font-size: 40px;
+  margin-top: -10px;
+  margin-left: 20px;
+  color:#D75413;
+  transition: color 0.3s ease; /* Adiciona uma transição suave para a mudança de cor */
+}
+
+.react-icon:hover {
+  color: #682666; /* Define a cor quando o mouse está sobre o ícone */
+}
+
+.vue-icon{
+
+  position: absolute;
+  font-size: 40px;
+  margin-top: 240px;
+  margin-left: 20px;
+  color:#D75413;
+  transition: color 0.3s ease; /* Adiciona uma transição suave para a mudança de cor */
+}
+
+.vue-icon:hover {
+  color: #682666; /* Define a cor quando o mouse está sobre o ícone */
+}
+
+.nivel-experiencia {
+  display: flex;
+  align-items: center;
+}
+
+.bolinha {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-left: 5px;
+  position: absolute;
+}
+
+.bolinha-introdutorio {
+  background-color: gray;
+}
+
+.bolinha-basico {
+  background-color: blue;
+}
+
+.bolinha-intermediario {
+  background-color: green;
+}
+
+.bolinha-avancado {
+  background-color: orange;
 }
