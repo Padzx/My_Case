@@ -1,0 +1,36 @@
+.container{
+
+    position: absolute;
+    padding: 60px;
+    background-color: transparent;
+    margin-top: 85px;
+    margin-left: 40px;
+    width: 1000px;
+}
+
+@keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .container h1 {
+      font-size: 35px;
+      margin-top: -40px;
+      background: linear-gradient(to right, #D75413, #682666);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: slideIn 1s ease forwards; /* Aplica a animação deslizante */
+  }
+  
+  .yellow-text{
+
+    background: linear-gradient(to right, #D75413, #682666);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }

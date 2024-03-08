@@ -1,74 +1,49 @@
-import { IoIosMoon, IoIosSunny, IoLogoLinkedin, IoLogoGithub } from "react-icons/io";
-import React, { useState, useEffect } from 'react';
+// App.js
+import React, { useState } from 'react';
+import { IoIosMoon, IoIosSunny } from 'react-icons/io';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/home';
+import Aboutme from './pages/aboutme';
+import Skills from './pages/skills';
+import { ThemeProvider } from './components/ThemeContext'; // Import ThemeProvider
 import './App.css';
+import Navbar from './components/NavBar'; // Import Navbar Component
 
 const App = () => {
-  const words = ['Frontend.', 'Data Analytics.', 'Devops Engineer.'];
-  const [currentWordIndex, setCurrentWordIndex] = useState(0);
-  const [currentWord, setCurrentWord] = useState('');
-  const [typingForward, setTypingForward] = useState(true);
-  const [isMoonActive, setIsMoonActive] = useState(false);
-  const [isSunActive, setIsSunActive] = useState(false);
-
-  useEffect(() => {
-    const wordInterval = setInterval(() => {
-      const word = words[currentWordIndex];
-
-      if (typingForward) {
-        setCurrentWord((prevWord) => {
-          if (prevWord === word) {
-            setTypingForward(false);
-            return prevWord;
-          }
-
-          const nextChar = word.charAt(prevWord.length);
-          return prevWord + nextChar;
-        });
-      } else {
-        setCurrentWord((prevWord) => prevWord.slice(0, -1));
-
-        if (currentWord === '') {
-          setTypingForward(true);
-          setCurrentWordIndex((prevIndex) => (prevIndex + 1) % words.length);
-        }
-      }
-    }, 100); // Velocity Typing //
-
-    return () => clearInterval(wordInterval);
-  }, [currentWord, currentWordIndex, typingForward, words]);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   const handleMoonClick = () => {
-    setIsMoonActive(true);
-    setIsSunActive(false);
+    setIsDarkMode(true);
     document.body.classList.add('dark-mode');
   };
 
   const handleSunClick = () => {
-    setIsMoonActive(false);
-    setIsSunActive(true);
+    setIsDarkMode(false);
     document.body.classList.remove('dark-mode');
   };
 
   return (
-    <div className={`title ${isMoonActive ? 'dark-mode' : 'light-mode'}`}>
-      <h1>Hi There! I'm Gabriel Padilha.</h1>
-      <div className="icon-container">
-        <div className={`icon ${isMoonActive ? 'active' : ''}`} onClick={handleMoonClick}>
-          <IoIosMoon />
-        </div>
-        <div className={`icon ${isSunActive ? 'active' : ''}`} onClick={handleSunClick}>
-          <IoIosSunny />
+    <ThemeProvider>
+      <div className={`title ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
+        <div className="icon-container">
+          <div className={`icon ${isDarkMode ? 'active' : ''}`} onClick={handleMoonClick}>
+            <IoIosMoon />
+          </div>
+          <div className={`icon ${isDarkMode ? '' : 'active'}`} onClick={handleSunClick}>
+            <IoIosSunny />
+          </div>
         </div>
         <button className="toggle-button">Toggle</button>
-        <div>
-        <IoLogoLinkedin className="icon-work-li" />
-        <IoLogoGithub className="icon-work-gt" />
-        </div>
       </div>
-      <div className="animated-text">
-        {currentWord}
-      </div>
-    </div>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/home" element={<Home />} />
+          <Route path="/aboutme" element={<Aboutme />} />
+          <Route path="/skills" element={<Skills />} />
+        </Routes>
+      </Router>
+    </ThemeProvider>
   );
 }
 

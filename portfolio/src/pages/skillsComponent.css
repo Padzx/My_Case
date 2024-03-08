@@ -1,0 +1,45 @@
+.container-skills {
+
+    padding: 30px;
+    background-color: transparent;
+
+
+}
+
+@keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+.container-skills h1 {
+
+    font-size: 35px;
+    margin-top: 5px;
+    background: linear-gradient(to right, #D75413, #682666);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: slideIn 1s ease forwards; /* Aplica a animação deslizante */
+    margin-left: 485px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-frontend{
+
+    width: 250px;
+    margin-top: -50px;
+    margin-left:190px;
+    background-color: #333;
+}
+
+.container-frontend h1 {
+    
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 50px;
+}

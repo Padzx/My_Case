@@ -1,102 +1,44 @@
 /* App.css Global Customization */
-.title {
-  
-  font-size: 28px;
-  font-weight: bold;
-  position: absolute;
-  margin-top: 150px;
-  margin-left: 250px;
-  font-family: Arial, Helvetica, sans-serif;
 
-  background-image: linear-gradient(to right, #8c00ff, #feb47b);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+body {
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
-
-
-.animated-text {
-  
-  font-size: 24px; 
-  font-weight: bold;
-  margin-left: 290px;
-  margin-top: -20px;
-  font-family: Arial, Helvetica, sans-serif;
-
-}
-
-.animated-text span {
-  /* Styles Animation Words */
-  overflow: hidden; /* Ocult Container Mode */
-  border-right: 2px solid #000; 
-  font-family: Arial, Helvetica, sans-serif;
-  white-space: nowrap;
-  margin-right: 5px; 
-  animation: typing 1.5s steps(25) infinite, blink 1s infinite alternate; /* Apply Animation Keyboard */
-
-}
-
-.animated-text span:last-child {
-  border-right: none; 
-}
-
-@keyframes typing {
-  0% {
-    width: 0;
-  }
-  40% {
-    width: 10ch; /* word 'Frontend' */
-  }
-  60% {
-    width: 20ch; /* word 'Data Analytics' */
-  }
-  80% {
-    width: 25ch; /* word 'Devops' */
-  }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
-
 
 
 .dark-mode {
-  background-color: #000000;
+  background-color: #222;
   color: #fff;
-  transition: background-color 0.3s, color 0.3s;
 }
 
 .light-mode {
   background-color: #fff;
-  color: #333;
-  transition: background-color 0.3s, color 0.3s;
+  color: #222;
 }
 
+
 .icon-container {
-  position: absolute;
-  margin-left: 950px;
+  margin-left: 960px;
   width: 100px;
   transform: translateX(-50%);
-  margin-top: -250px;
+  margin-top: -145px;
   position: absolute;
+  z-index: 1; /* Garante que o container esteja acima do botão */
 }
+
 
 .icon {
   display: inline-block;
   font-size: 25px;
   cursor: pointer;
   margin: 0 10px;
+  z-index: 1; /* Garante que o ícone esteja acima do botão */
+  position: relative; /* Define a posição como relativa */
 }
 
 .icon.active {
-  color: #ffc107; 
+  color: #d0ff00; 
 }
 
-.animated-text {
-  margin-top: 50px; 
-}
 
 /* CSS-Button*/
 .toggle-button {
@@ -105,13 +47,18 @@
   padding: 10px 20px;
   border-radius: 20px;
   font-size: 16px;
-  margin-top: -8px;
-  margin-left: -90px;
+  margin-top: -155px;
+  margin-left: 910px;
   transition: background-color 0.3s; 
   position: absolute;
-  overflow: visible; 
+  overflow: visible;
+  pointer-events: none; /* Desativa a interação com o botão */
 }
 
+.icon-container .icon {
+  position: relative;
+  z-index: 2;
+}
 
 .toggle-button::before {
   content: '';
@@ -121,39 +68,11 @@
   bottom: -2px;
   left: -2px;
   border-radius: 20px;
-  background: linear-gradient(to bottom right, #8c00ff, #f39c12); 
-  z-index: -1; 
+  background: linear-gradient(to bottom right, #D75413, #682666); 
+  z-index: 0;
 }
 
 .toggle-button:hover {
   background-color: rgba(255, 255, 255, 0.1); 
 }
 
-.icon {
-  position: relative;
-  z-index: 1; 
-}
-
-.icon-work-gt {
-  margin-left: -900px;
-  margin-top: 85px;
-  position: absolute;
-  cursor: pointer;
-  mask-image: linear-gradient(to right, transparent, #ffffff); 
-}
-
-.icon-work-gt:hover {
-  mask-image: linear-gradient(to right, #ff8a00, #da1b60); 
-}
-
-.icon-work-li {
-  margin-top: 85px;
-  margin-left: -850px;
-  position: absolute;
-  cursor: pointer;
-  mask-image: linear-gradient(to right, transparent, #ffffff); 
-}
-
-.icon-work-li:hover {
-  mask-image: linear-gradient(to right, #0e76a8, #25d366); 
-}

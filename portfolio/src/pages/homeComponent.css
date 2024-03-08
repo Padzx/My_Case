@@ -1,0 +1,110 @@
+.title {
+  
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 250px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+  
+    background-image: linear-gradient(to right, #D75413, #682666);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  
+  .animated-text {
+    
+    font-size: 29px; 
+    font-weight: bold;
+    margin-left: 275px;
+    margin-top: -20px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 60px;
+  
+  }
+  
+  .animated-text span {
+    /* Styles Animation Words */
+    overflow: hidden; /* Ocult Container Mode */
+    border-right: 2px solid #000; 
+    font-family: Arial, Helvetica, sans-serif;
+    white-space: nowrap;
+    margin-right: 5px; 
+    animation: typing 1.5s steps(25) infinite, blink 1s infinite alternate; /* Apply Animation Keyboard */
+  
+  }
+  
+  .animated-text span:last-child {
+    border-right: none; 
+  }
+  
+  @keyframes typing {
+    0% {
+      width: 0;
+    }
+    40% {
+      width: 10ch; /* word 'Frontend' */
+    }
+    60% {
+      width: 20ch; /* word 'Data Analytics' */
+    }
+    80% {
+      width: 25ch; /* word 'Devops' */
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+
+  /* ------------- Icons Github and Linkedin ----------------*/
+
+  .icon-container {
+    position: absolute;
+    margin-left: 900px; /* Mova os ícones horizontalmente */
+    margin-top: 20px; /* Mova os ícones verticalmente */
+    width: 100px;
+    transform: translateX(-50%);
+    margin-top: -122px;
+
+  }
+  
+  .icon-git {
+    font-size: 40px;
+    margin-top: -60px;
+    position: absolute;
+    margin-left: -660px;
+    color: #4e4e48; /* Cor do ícone */
+    transition: color 0.3s ease; /* Adiciona transição suave */
+  }
+  
+  .icon-git:hover {
+    color: #682666; /* Cor do ícone ao passar o mouse */
+  }
+  
+  .icon-li {
+    font-size: 40px;
+    position: absolute;
+    margin-left: -520px;
+    margin-top: -60px;
+    color: #4e4e48; /* Cor do ícone */
+    transition: color 0.3s ease; /* Adiciona transição suave */
+  }
+  
+  .icon-li:hover {
+    color: #D75413; /* Cor do ícone ao passar o mouse */
+  }
+  /* ----------- Icon React -------------*/
+
+  .icon-react-rotate {
+    display: inline-block;
+    font-size: 40px;
+    margin-top: 210px;
+    margin-left: -575px;
+  }
+  
