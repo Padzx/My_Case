@@ -2,13 +2,19 @@ import React, { useState, useEffect } from 'react';
 import './skillsComponent.css'
 import { FaReact, FaHtml5, FaCss3Alt, FaVuejs, FaJsSquare } from 'react-icons/fa';
 import { FaJava} from 'react-icons/fa';
-import { SiDjango, SiMongodb } from "react-icons/si";
+import { SiDjango, SiMongodb, SiKubernetes, SiYaml, SiGithubactions   } from "react-icons/si";
 import { BiLogoFlask } from "react-icons/bi";
 import { TbHexagonNumber1, TbHexagonNumber2, TbHexagonNumber3 } from "react-icons/tb";
+import { GrDocker } from "react-icons/gr";
+
+
+
+
+
 
 
 const Skills = () => {
-  const [selectedContainer, setSelectedContainer] = useState('');
+  const [selectedContainer, setSelectedContainer] = useState('frontend'); // Defina o estado inicial como 'frontend'
 
   const handleIconClick = (container) => {
     setSelectedContainer(container);
@@ -31,13 +37,14 @@ const Skills = () => {
       <div className="icons-navigation">
         <TbHexagonNumber1 className="one-filter" onClick={() => handleIconClick('frontend')} />
         <TbHexagonNumber2 className="two-filter" onClick={() => handleIconClick('devops')} />
-        <TbHexagonNumber3 className="three-filter" onClick={() => handleIconClick('devops')} />
       </div>
     </div>
   );
 };
 
 export default Skills;
+
+
 
 
 const Frontend = () => {
@@ -157,16 +164,21 @@ const DevOps = () => {
       <h1>DevOps</h1>
       <div className="devops-icons">
         <div className="icon-with-nivel-aws">
-          
-          <NivelExperiencia nivel={3} prefix="devops" />
-          <span className="nivel-text-aws">Intermediário</span>
+        <SiKubernetes className="kubernetes-icon" />
+          <span className="nivel-text-aws"></span>
         </div>
         <div className="icon-with-nivel-docker">
-          
-          <NivelExperiencia nivel={3} prefix="devops" />
-          <span className="nivel-text-docker">Intermediário</span>
+        <GrDocker className="docker-icon" />
+          <span className="nivel-text-docker"></span>
         </div>
-        {/* Adicione outros ícones DevOps aqui com suas respectivas bolinhas de nível de experiência */}
+        <div className="icon-with-nivel-yaml">
+          <SiYaml className="yaml-icon" />
+          <span className="nivel-text-yaml"></span>
+        </div>
+        <div className="icon-with-nivel-github-actions">
+          <SiGithubactions className="github-actions-icon" />
+          <span className="nivel-text-github-actions"></span>
+        </div>
       </div>
     </div>
   );

@@ -12,7 +12,13 @@
 
 .one-filter:hover {
   color: #7f00b2; /* Cor do ícone ao passar o mouse */
+  
 }
+
+.one-filter.active {
+  color: #00A8EF; /* Cor do ícone quando estiver ativo */
+}
+
 
 
 
@@ -30,31 +36,8 @@
   color: #7f00b2; /* Cor do ícone ao passar o mouse */
 }
 
-.three-filter {
 
-  margin-top: -405px;
-  position: absolute;
-  font-size: 23px;
-  margin-left: 660px;
-  animation: slideIn 1s ease forwards;
-  transition: color 0.3s ease; /* Adiciona transição suave */
-}
 
-.three-filter:hover {
-  color: #7f00b2; /* Cor do ícone ao passar o mouse */
-}
-
-.arrow-left {
-
-  position: absolute;
-  margin-top: -430px;
-  margin-left: 500px;
-  font-size: 35px;
-  cursor: pointer;
-  color:#7f00b2;
-  
-
-}
 
 
 .container-skills {
@@ -586,9 +569,73 @@
 }
 
 
+
+
+
+
+
+
+
+
+
 .container-devops {
 
-  position: absolute;
   width: 400px;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-left: 190px;
+  height: 365px;
+  background-color: #333;
+  animation: slideIn 0.5s ease forwards; 
+}
 
+.container-devops h1 {
+
+  font-size: 35px;
+  background: linear-gradient(to right, #00A8EF, #7f00b2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 120px;
+}
+
+.docker-icon {
+  position: absolute;
+  font-size: 50px;
+  margin-top: -10px;
+  margin-left: 45px;
+  color:#00A8EF;
+  transition: color 0.3s ease; 
+}
+
+.kubernetes-icon {
+
+  position: absolute;
+  font-size: 40px;
+  margin-top: 65px;
+  margin-left: 45px;
+  color:#00A8EF;
+  transition: color 0.3s ease; /* Adiciona uma transição suave para a mudança de cor */
+
+}
+
+.yaml-icon{
+
+  position: absolute;
+  font-size: 40px;
+  margin-top: 145px;
+  margin-left: 45px;
+  color:#00A8EF;
+  transition: color 0.3s ease; /* Adiciona uma transição suave para a mudança de cor */
+
+}
+
+.github-actions-icon{
+
+  position: absolute;
+  font-size: 40px;
+  margin-top: 205px;
+  margin-left: 45px;
+  color:#00A8EF;
+  transition: color 0.3s ease; /* Adiciona uma transição suave para a mudança de cor */
 }
