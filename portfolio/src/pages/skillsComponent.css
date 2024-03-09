@@ -1,3 +1,62 @@
+
+/* Estilos padrão */
+.one-filter {
+  margin-top: -405px;
+  position: absolute;
+  font-size: 23px;
+  margin-left: 550px;
+  animation: slideIn 1s ease forwards; 
+  transition: color 0.3s ease; /* Adiciona transição suave */
+
+}
+
+.one-filter:hover {
+  color: #7f00b2; /* Cor do ícone ao passar o mouse */
+}
+
+
+
+.two-filter {
+  margin-top: -405px;
+  position: absolute;
+  font-size: 23px;
+  margin-left: 605px;
+  animation: slideIn 1s ease forwards;
+  transition: color 0.3s ease; /* Adiciona transição suave */
+
+}
+
+.two-filter:hover {
+  color: #7f00b2; /* Cor do ícone ao passar o mouse */
+}
+
+.three-filter {
+
+  margin-top: -405px;
+  position: absolute;
+  font-size: 23px;
+  margin-left: 660px;
+  animation: slideIn 1s ease forwards;
+  transition: color 0.3s ease; /* Adiciona transição suave */
+}
+
+.three-filter:hover {
+  color: #7f00b2; /* Cor do ícone ao passar o mouse */
+}
+
+.arrow-left {
+
+  position: absolute;
+  margin-top: -430px;
+  margin-left: 500px;
+  font-size: 35px;
+  cursor: pointer;
+  color:#7f00b2;
+  
+
+}
+
+
 .container-skills {
 
     padding: 30px;
@@ -20,23 +79,24 @@
 .container-skills h1 {
 
     font-size: 35px;
-    margin-top: 5px;
-    background: linear-gradient(to right, #D75413, #682666);
+    position: absolute;
+    margin-top: -5px;
+    background: linear-gradient(to right, #00A8EF, #7f00b2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: slideIn 1s ease forwards; /* Aplica a animação deslizante */
-    margin-left: 485px;
+    animation: slideIn 1s ease forwards; 
+    margin-left: 510px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .container-frontend {
   width: 400px;
   border-radius: 10px;
-  margin-top: -50px;
+  margin-top: 50px;
   margin-left: 190px;
   height: 365px;
   background-color: #333;
-  animation: slideIn 0.5s ease forwards; /* Adiciona a animação slideIn */
+  animation: slideIn 0.5s ease forwards; 
 }
 
 
@@ -49,7 +109,7 @@
   }
   to {
     opacity: 1;
-    transform: translateY(0); /* Sem deslocamento vertical */
+    transform: translateY(0);
   }
 }
 
@@ -57,7 +117,7 @@
 .container-frontend h1 {
     
     font-size: 35px;
-    background: linear-gradient(to right, #D75413, #682666);
+    background: linear-gradient(to right, #00A8EF, #7f00b2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: Arial, Helvetica, sans-serif;
@@ -66,103 +126,469 @@
 
 /* ------ Icons Frontend --------*/
 
+/*------------------------------CSS HTML--------------------------*/
 .html-icon {
-  margin-top: 110px;
+  margin-top: -8px;
   position: absolute;
   font-size: 40px;
-  margin-left: 20px;
-  color:#D75413;
-  transition: color 0.3s ease; /* Adiciona uma transição suave para a mudança de cor */
+  margin-left: 45px;
+  color:#00A8EF;
+  transition: color 0.3s ease; 
 }
 
 .html-icon:hover {
-  color: #682666; /* Define a cor quando o mouse está sobre o ícone */
+  color: #7f00b2; 
 }
 
+.icon-with-nivel-html{
 
+  position: absolute;
+  margin-top: 120px;
+}
+
+.nivel-text-html {
+
+  position: absolute;
+  margin-top: 2px;
+  margin-left: 240px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  background: linear-gradient(to right, #00A8EF, #7f00b2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+/*----------------------------------------------------------------------*/
+
+
+
+/*------------------------------CSS CSS--------------------------*/
 .css-icon{
 
   
   position: absolute;
   font-size: 40px;
-  margin-top: 170px;
-  margin-left: 20px;
-  color:#D75413;
-  transition: color 0.3s ease; /* Adiciona uma transição suave para a mudança de cor */
+  margin-top: -7px;
+  margin-left: 45px;
+  color:#00A8EF;
+  transition: color 0.3s ease; 
 }
 
 .css-icon:hover {
-  color: #682666; /* Define a cor quando o mouse está sobre o ícone */
+  color: #7f00b2; 
 }
 
+.icon-with-nivel-css{
+
+  position: absolute;
+  margin-top: 185px;
+}
+
+.nivel-text-css {
+
+  position: absolute;
+  margin-top: 2px;
+  margin-left: 240px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  background: linear-gradient(to right, #00A8EF, #7f00b2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+/*----------------------CSS JavaScript-----------------------------------------------*/
 .js-icon{
 
 
   position: absolute;
   font-size: 40px;
-  margin-top: 50px;
-  margin-left: 20px;
-  color:#D75413;
+  margin-top: -5px;
+  margin-left: 45px;
+  color:#00A8EF;
   transition: color 0.3s ease; /* Adiciona uma transição suave para a mudança de cor */
 }
 
 .js-icon:hover {
-  color: #682666; /* Define a cor quando o mouse está sobre o ícone */
+  color: #7f00b2; /* Define a cor quando o mouse está sobre o ícone */
 }
 
+.icon-with-nivel-js{
+
+  position: absolute;
+  margin-top: 50px;
+}
+
+.nivel-text-js {
+
+  position: absolute;
+  margin-top: 2px;
+  margin-left: 240px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  background: linear-gradient(to right, #00A8EF, #7f00b2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+/*----------------------------------------------------------------------------------------------*/
+
+
+/*----------------------------------CSS React Icons --------------------------------------------*/
 .react-icon{
 
   position: absolute;
   font-size: 40px;
   margin-top: -10px;
-  margin-left: 20px;
-  color:#D75413;
-  transition: color 0.3s ease; /* Adiciona uma transição suave para a mudança de cor */
+  margin-left: 45px;
+  color:#00A8EF;
+  transition: color 0.3s ease; 
 }
 
 .react-icon:hover {
-  color: #682666; /* Define a cor quando o mouse está sobre o ícone */
+  color: #7f00b2;
 }
+
+/*-----------------------------------------------------------------------------------------------------*/
+
 
 .vue-icon{
 
   position: absolute;
   font-size: 40px;
-  margin-top: 240px;
-  margin-left: 20px;
-  color:#D75413;
-  transition: color 0.3s ease; /* Adiciona uma transição suave para a mudança de cor */
+  margin-top: -3px;
+  margin-left: 45px;
+  color:#00A8EF;
+  transition: color 0.3s ease; 
 }
 
 .vue-icon:hover {
-  color: #682666; /* Define a cor quando o mouse está sobre o ícone */
+  color: #7f00b2; 
 }
 
+.icon-with-nivel {
+  position: absolute;
+  display: inline-block;
+  
+}
+
+.icon-with-nivel-vue{
+
+  position: absolute;
+  margin-top: 240px;
+}
+
+.container-backend {
+
+  width: 400px;
+  border-radius: 10px;
+  margin-top: -365px;
+  position: absolute;
+  margin-left: 650px;
+  background-color: #333;
+  height: 365px;
+  animation: slideIn 0.5s ease forwards;
+}
+
+.container-backend h1 {
+
+  font-size: 35px;
+  background: linear-gradient(to right, #00A8EF, #7f00b2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 120px;
+  margin-top: -1px;
+  position: absolute;
+}
+
+.backend-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+
+.nivel-text {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/*---------------------Java Icon---------------------*/
+.java-icon  {
+
+  font-size: 40px;
+  margin-top: 58px;
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  color:#00A8EF;
+  transition: color 0.3s ease;
+  margin-left: -140px; 
+}
+
+.java-icon:hover {
+  color: #7f00b2; 
+}
+
+/*---------------------------------------------*/
+
+/*-------------------------Flask Icon------------*/
+.flask-icon{
+  font-size: 40px;
+  margin-top: 125px;
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  color:#00A8EF;
+  transition: color 0.3s ease;
+  margin-left: -140px;
+}
+
+.flask-icon:hover {
+  color: #7f00b2; 
+}
+
+/*----------------------------------------------------*/
+
+/*------------------------DJango Icon-----------------*/
+.django-icon{
+
+  font-size: 40px;
+  margin-top: 195px;
+  margin-left: -140px;
+  color:#00A8EF;
+  transition: color 0.3s ease;
+}
+
+.django-icon:hover {
+  color: #7f00b2; 
+}
+
+/*-----------------------------------------------------*/
+
+.mongodb-icon {
+
+  font-size: 40px;
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  color:#00A8EF;
+  margin-left: -140px;
+  margin-top: 270px;
+  transition: color 0.3s ease;
+
+
+}
+
+
+.mongodb-icon:hover {
+  color: #7f00b2; 
+}
+
+/*---------------------------------- Balls Experience Frontend ------------------------------------*/
+
 .nivel-experiencia {
+  position: absolute;
+  top: 5px; /* Ajuste conforme necessário para posicionar as bolinhas corretamente */
+  left: 120px; /* Ajuste conforme necessário para posicionar as bolinhas corretamente */
   display: flex;
   align-items: center;
 }
 
 .bolinha {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
   margin-left: 5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #00000038; /* Cor padrão das bolinhas */
+  margin-right: 5px;
+  /* Adiciona transição suave para a mudança de cor */
+}
+
+.marcada {
+  background-color: #7f00b2; /* Cor das bolinhas marcadas */
+}
+
+.nivel-text {
+
+  margin-left: 240px;
+  margin-top: 2px;
   position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  background: linear-gradient(to right, #00A8EF, #7f00b2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 }
 
-.bolinha-introdutorio {
-  background-color: gray;
+
+
+
+
+
+
+
+
+
+
+
+/* Java Styles*/
+
+.backend-java-nivel-experiencia {
+  display: flex;
+  align-items: center;
 }
 
-.bolinha-basico {
-  background-color: blue;
+.backend-java-bolinha,
+.backend-java-bolinha-marcada {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-top: 70px;
+  transition: background-color 0.3s ease; /* Adiciona transição suave para a mudança de cor */
 }
 
-.bolinha-intermediario {
-  background-color: green;
+.nivel-text-java {
+
+  margin-left: 50px;
+  margin-top: 70px;
+  position: absolute;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, #00A8EF, #7f00b2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 }
 
-.bolinha-avancado {
-  background-color: orange;
+
+.backend-java-bolinha {
+  background-color: #00000038; /* Cor padrão das bolinhas */
+}
+
+.backend-java-bolinha-marcada {
+  background-color: #7f00b2; /* Cor das bolinhas marcadas */
+}
+
+.backend-java-nivel-experiencia {
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+/* Django Styles*/
+
+.backend-flask-bolinha,
+.backend-flask-bolinha-marcada {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-top: 135px;
+}
+
+.backend-flask-bolinha {
+  background-color: #00000038; /* Cor padrão das bolinhas */
+}
+
+.backend-flask-bolinha-marcada {
+  background-color: #7f00b2; /* Cor das bolinhas marcadas */
+}
+
+.nivel-text-flask{
+  position: absolute;
+  margin-left: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  background: linear-gradient(to right, #00A8EF, #7f00b2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 135px;
+}
+
+
+
+
+
+
+
+/* Django Styles*/
+
+.backend-django-bolinha,
+.backend-django-bolinha-marcada {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-top: 203px;
+  transition: background-color 0.3s ease; /* Transição de cor suave */
+}
+
+.backend-django-bolinha {
+  background-color: #00000038; /* Cor padrão das bolinhas */
+}
+
+.backend-django-bolinha-marcada {
+  background-color: #7f00b2; /* Cor das bolinhas marcadas */
+}
+
+.nivel-text-django{
+
+  position: absolute;
+  margin-left: 150px;
+  margin-top: 205px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  background: linear-gradient(to right, #00A8EF, #7f00b2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*MongoDB Styles*/
+
+.backend-mongodb-bolinha,
+.backend-mongodb-bolinha-marcada {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-top: 280px;
+  transition: background-color 0.3s ease;
+}
+
+.backend-mongodb-bolinha {
+  background-color: #00000038; /* Cor padrão das bolinhas */
+}
+
+.backend-mongodb-bolinha-marcada {
+  background-color: #7f00b2; /* Cor das bolinhas marcadas */
+}
+
+.nivel-text-mongodb {
+
+  position: absolute;
+  margin-left: 50px;
+  margin-top: 280px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  background: linear-gradient(to right, #00A8EF, #7f00b2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+.container-devops {
+
+  position: absolute;
+  width: 400px;
+
 }

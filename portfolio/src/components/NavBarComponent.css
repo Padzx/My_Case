@@ -33,11 +33,11 @@
 }
 
 .navbar-menu li a:hover {
-  color: #FFD700;
+  color: #7f00b2;
 }
 
 .navbar-menu li a.active {
-  color: #FFD700;
+  color: #00A8EF;
 }
 
 .navbar-toggle {

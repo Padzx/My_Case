@@ -8,7 +8,7 @@
     font-family: Arial, Helvetica, sans-serif;
     position: absolute;
   
-    background-image: linear-gradient(to right, #D75413, #682666);
+    background-image: linear-gradient(to right, #00A8EF, #7f00b2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -84,7 +84,7 @@
   }
   
   .icon-git:hover {
-    color: #682666; /* Cor do ícone ao passar o mouse */
+    color: #7f00b2; /* Cor do ícone ao passar o mouse */
   }
   
   .icon-li {
@@ -97,7 +97,7 @@
   }
   
   .icon-li:hover {
-    color: #D75413; /* Cor do ícone ao passar o mouse */
+    color: #00A8EF; /* Cor do ícone ao passar o mouse */
   }
   /* ----------- Icon React -------------*/
 

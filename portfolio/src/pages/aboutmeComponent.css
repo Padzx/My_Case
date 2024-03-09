@@ -22,15 +22,16 @@
   .container h1 {
       font-size: 35px;
       margin-top: -40px;
-      background: linear-gradient(to right, #D75413, #682666);
+      background: linear-gradient(to right, #00A8EF, #7f00b2);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       animation: slideIn 1s ease forwards; /* Aplica a animação deslizante */
+      position: absolute;
   }
   
   .yellow-text{
 
-    background: linear-gradient(to right, #D75413, #682666);
+    background: linear-gradient(to right, #00A8EF, #7f00b2);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
   }
