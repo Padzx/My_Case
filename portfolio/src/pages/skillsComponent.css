@@ -586,10 +586,25 @@
   margin-left: 190px;
   height: 365px;
   background-color: #333;
-  animation: slideIn 0.5s ease forwards; 
+  animation: slideIn 0.5s ease forwards;
+  overflow-y: auto;
 }
 
-.container-devops h1 {
+.container-devops::-webkit-scrollbar {
+  width: 10px; /* Largura da barra de rolagem */
+}
+
+.container-devops::-webkit-scrollbar-thumb {
+  background-color: #7f00b2; /* Cor do polegar da barra de rolagem */
+  border-radius: 10px; /* Raio do polegar da barra de rolagem */
+}
+
+.container-devops::-webkit-scrollbar-track {
+  background-color: #333; /* Cor do fundo da barra de rolagem */
+}
+
+
+.container-devops h1 {  
 
   font-size: 35px;
   background: linear-gradient(to right, #00A8EF, #7f00b2);
@@ -597,25 +612,117 @@
   -webkit-text-fill-color: transparent;
   font-family: Arial, Helvetica, sans-serif;
   margin-left: 120px;
+  margin-top: 5px;
 }
+
 
 .docker-icon {
   position: absolute;
   font-size: 50px;
-  margin-top: -10px;
+  margin-top: -15px;
   margin-left: 45px;
   color:#00A8EF;
   transition: color 0.3s ease; 
 }
 
+.docker-icon:hover {
+  color: #7f00b2; 
+}
+
+.backend-docker-bolinha,
+.backend-docker-bolinha-marcada {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-top: 65px;
+  transition: background-color 0.3s ease; /* Transição de cor suave */
+}
+
+.backend-docker-bolinha {
+  background-color: #00000038; /* Cor padrão das bolinhas */
+}
+
+.nivel-text-docker{
+
+  position: absolute;
+  margin-left: 250px;
+  margin-top: -2px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  background: linear-gradient(to right, #00A8EF, #7f00b2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.backend-django-bolinha-marcada {
+  background-color: #7f00b2; /* Cor das bolinhas marcadas */
+}
+
+
+
+
 .kubernetes-icon {
 
   position: absolute;
   font-size: 40px;
-  margin-top: 65px;
+  margin-top: 55px;
   margin-left: 45px;
   color:#00A8EF;
   transition: color 0.3s ease; /* Adiciona uma transição suave para a mudança de cor */
+
+}
+
+.kubernetes-icon:hover {
+  color: #7f00b2; /* Adiciona uma transição suave para a mudança de cor */
+}
+
+.backend-kubernetes-bolinha,
+.backend-kubernetes-bolinha-marcada {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-top: 135px;
+  transition: background-color 0.3s ease; /* Transição de cor suave */
+}
+
+.backend-kubernetes-bolinha {
+  background-color: #00000038; /* Cor padrão das bolinhas */
+}
+
+.nivel-text-kubernetes{
+
+  position: absolute;
+  margin-left: 250px;
+  margin-top: 68px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  background: linear-gradient(to right, #00A8EF, #7f00b2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+
+
+.backend-django-bolinha-marcada {
+  background-color: #7f00b2; /* Cor das bolinhas marcadas */
+}
+
+
+.nivel-text-yaml {
+
+position: absolute;
+margin-left: 250px;
+margin-top: 140px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 18px;
+background: linear-gradient(to right, #00A8EF, #7f00b2);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 
 }
 
@@ -623,12 +730,35 @@
 
   position: absolute;
   font-size: 40px;
-  margin-top: 145px;
+  margin-top: 130px;
   margin-left: 45px;
   color:#00A8EF;
   transition: color 0.3s ease; /* Adiciona uma transição suave para a mudança de cor */
 
 }
+
+.yaml-icon:hover {
+  color: #7f00b2; /* Adiciona uma transição suave para a mudança de cor */
+}
+
+.backend-yaml-bolinha,
+.backend-yaml-bolinha-marcada {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-top: 208px;
+  transition: background-color 0.3s ease; /* Transição de cor suave */
+}
+
+.backend-yaml-bolinha {
+  background-color: #00000038; /* Cor padrão das bolinhas */
+}
+
+.backend-django-bolinha-marcada {
+  background-color: #7f00b2; /* Cor das bolinhas marcadas */
+}
+
 
 .github-actions-icon{
 
@@ -638,4 +768,305 @@
   margin-left: 45px;
   color:#00A8EF;
   transition: color 0.3s ease; /* Adiciona uma transição suave para a mudança de cor */
+}
+
+
+.github-actions-icon:hover {
+  color: #7f00b2; /* Adiciona uma transição suave para a mudança de cor */
+}
+
+.backend-github-actions-bolinha,
+.backend-github-actions-bolinha-marcada {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-top: 285px;
+  transition: background-color 0.3s ease; /* Transição de cor suave */
+}
+
+.backend-github-actions-bolinha {
+  background-color: #00000038; /* Cor padrão das bolinhas */
+}
+
+.backend-github-actions-bolinha-marcada {
+  background-color: #7f00b2; /* Cor das bolinhas marcadas */
+}
+
+.nivel-text-github-actions{
+
+position: absolute;
+margin-left: 250px;
+margin-top: 218px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 18px;
+background: linear-gradient(to right, #00A8EF, #7f00b2);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+
+.backend-terraform-bolinha,
+.backend-terraform-bolinha-marcada {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-top: 365px;
+  transition: background-color 0.3s ease; /* Transição de cor suave */
+}
+
+.backend-terraform-bolinha {
+  background-color: #00000038; /* Cor padrão das bolinhas */
+}
+
+.backend-terraform-bolinha-marcada {
+  background-color: #7f00b2; /* Cor das bolinhas marcadas */
+}
+
+
+.terraform-icon {
+
+  position: absolute;
+  font-size: 40px;
+  margin-top: 285px;
+  margin-left: 45px;
+  color:#00A8EF;
+  transition: color 0.3s ease; /* Adiciona uma transição suave para a mudança de cor */
+
+}
+
+.terraform-icon:hover {
+  color: #7f00b2; /* Adiciona uma transição suave para a mudança de cor */
+}
+
+.nivel-text-terraform{
+
+  position: absolute;
+margin-left: 250px;
+margin-top: 299px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 18px;
+background: linear-gradient(to right, #00A8EF, #7f00b2);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+
+
+.backend-jenkins-bolinha,
+.backend-jenkins-bolinha-marcada {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-top: 445px;
+  transition: background-color 0.3s ease; /* Transição de cor suave */
+}
+
+.backend-jenkins-bolinha {
+  background-color: #00000038; /* Cor padrão das bolinhas */
+}
+
+.backend-jenkins-bolinha-marcada {
+  background-color: #7f00b2; /* Cor das bolinhas marcadas */
+}
+
+.nivel-text-jenkins{
+
+position: absolute;
+margin-left: 250px;
+margin-top: 380px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 18px;
+background: linear-gradient(to right, #00A8EF, #7f00b2);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+
+
+.jenkins-icon {
+
+  position: absolute;
+  font-size: 40px;
+  margin-top: 365px;
+  margin-left: 45px;
+  color:#00A8EF;
+  transition: color 0.3s ease; /* Adiciona uma transição suave para a mudança de cor */
+
+}
+
+.jenkins-icon:hover {
+  color: #7f00b2; 
+}
+
+
+.backend-git-bolinha,
+.backend-git-bolinha-marcada {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-top: 525px;
+  transition: background-color 0.3s ease; /* Transição de cor suave */
+}
+
+.backend-git-bolinha {
+  background-color: #00000038; /* Cor padrão das bolinhas */
+}
+
+.backend-git-bolinha-marcada {
+  background-color: #7f00b2; /* Cor das bolinhas marcadas */
+}
+
+
+.git-icon{
+
+  position: absolute;
+  font-size: 40px;
+  margin-top: 445px;
+  margin-left: 45px;
+  color:#00A8EF;
+  transition: color 0.3s ease; /* Adiciona uma transição suave para a mudança de cor */
+
+
+}
+
+.git-icon:hover {
+  color: #7f00b2; /* Adiciona uma transição suave para a mudança de cor */
+}
+.nivel-text-git{
+
+position: absolute;
+margin-left: 250px;
+margin-top: 460px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 18px;
+background: linear-gradient(to right, #00A8EF, #7f00b2);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+
+
+.container-data-science{
+  width: 400px;
+  border-radius: 10px;
+  margin-top: -365px;
+  position: absolute;
+  margin-left: 650px;
+  background-color: #333;
+  height: 365px;
+  overflow-y: auto;
+  animation: slideIn 0.5s ease forwards;
+}
+
+.container-data-science h1 {  
+
+  font-size: 35px;
+  background: linear-gradient(to right, #00A8EF, #7f00b2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 90px;
+  margin-top: 5px;
+}
+
+.container-data-science::-webkit-scrollbar {
+  width: 10px; /* Largura da barra de rolagem */
+}
+
+.container-data-science::-webkit-scrollbar-thumb {
+  background-color: #7f00b2; /* Cor do polegar da barra de rolagem */
+  border-radius: 10px; /* Raio do polegar da barra de rolagem */
+}
+
+.container-data-science::-webkit-scrollbar-track {
+  background-color: #333; /* Cor do fundo da barra de rolagem */
+}
+
+.python-icon{
+
+  position: absolute;
+  font-size: 40px;
+  margin-top: -15px;
+  margin-left: 50px;
+  color:#00A8EF;
+  transition: color 0.3s ease;
+}
+
+.python-icon:hover {
+  color: #7f00b2;
+}
+
+.spark-icon{
+
+  position: absolute;
+  font-size: 80px;
+  margin-top: 25px;
+  margin-left: 35px;
+  color:#00A8EF;
+  transition: color 0.3s ease;
+}
+
+.spark-icon:hover {
+  color: #7f00b2;
+}
+
+.mysql-icon{
+
+  position: absolute;
+  font-size: 60px;
+  margin-top: 105px;
+  margin-left: 45px;
+  color:#00A8EF;
+  transition: color 0.3s ease;
+}
+
+.mysql-icon:hover {
+  color: #7f00b2;
+}
+
+.apache-hadoop-icon{
+
+  position: absolute;
+  font-size: 60px;
+  margin-top: 195px;
+  margin-left: 45px;
+  color:#00A8EF;
+  transition: color 0.3s ease;
+
+}
+
+.apache-hadoop-icon:hover {
+  color: #7f00b2;
+}
+
+.postgresql-icon{
+
+  position: absolute;
+  font-size: 60px;
+  margin-top: 275px;
+  margin-left: 45px;
+  color:#00A8EF;
+  transition: color 0.3s ease;
+}
+
+.postgresql-icon:hover {
+  color: #7f00b2;
+}
+
+.powerbi-icon{
+
+  position: absolute;
+  font-size: 40px;
+  margin-top: 375px;
+  margin-left: 55px;
+  color:#00A8EF;
+  transition: color 0.3s ease;
+}
+
+.powerbi-icon:hover {
+  color: #7f00b2;
 }

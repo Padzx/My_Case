@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import './skillsComponent.css'
-import { FaReact, FaHtml5, FaCss3Alt, FaVuejs, FaJsSquare } from 'react-icons/fa';
+import { FaReact, FaHtml5, FaCss3Alt, FaVuejs, FaJsSquare, FaJenkins, FaGitAlt, FaPython} from 'react-icons/fa';
 import { FaJava} from 'react-icons/fa';
-import { SiDjango, SiMongodb, SiKubernetes, SiYaml, SiGithubactions   } from "react-icons/si";
-import { BiLogoFlask } from "react-icons/bi";
+import { SiDjango, SiMongodb, SiKubernetes, SiYaml, SiGithubactions, SiTerraform, SiMysql, SiApachehadoop, SiPowerbi }  from "react-icons/si";
+import { BiLogoFlask, BiLogoPostgresql} from "react-icons/bi";
+import { DiSpark } from "react-icons/di";
 import { TbHexagonNumber1, TbHexagonNumber2, TbHexagonNumber3 } from "react-icons/tb";
 import { GrDocker } from "react-icons/gr";
 
@@ -32,7 +33,12 @@ const Skills = () => {
             <Backend />
           </>
         )}
-        {selectedContainer === 'devops' && <DevOps />}
+        {(selectedContainer === 'devops' || selectedContainer === 'datascience') && (
+          <>
+            <DevOps />
+            <DataScience />
+          </>
+        )}
       </div>
       <div className="icons-navigation">
         <TbHexagonNumber1 className="one-filter" onClick={() => handleIconClick('frontend')} />
@@ -165,21 +171,78 @@ const DevOps = () => {
       <div className="devops-icons">
         <div className="icon-with-nivel-aws">
         <SiKubernetes className="kubernetes-icon" />
-          <span className="nivel-text-aws"></span>
+        <NivelExperienciaBackend nivel={3} prefix="backend-kubernetes" />
+          <span className="nivel-text-kubernetes">Intermediário</span>
         </div>
         <div className="icon-with-nivel-docker">
         <GrDocker className="docker-icon" />
-          <span className="nivel-text-docker"></span>
+        <NivelExperienciaBackend nivel={3} prefix="backend-docker" />
+          <span className="nivel-text-docker">Intermediário</span>
         </div>
         <div className="icon-with-nivel-yaml">
           <SiYaml className="yaml-icon" />
-          <span className="nivel-text-yaml"></span>
+          <NivelExperienciaBackend nivel={3} prefix="backend-yaml" />
+          <span className="nivel-text-yaml">Intermediário</span>
         </div>
         <div className="icon-with-nivel-github-actions">
           <SiGithubactions className="github-actions-icon" />
-          <span className="nivel-text-github-actions"></span>
+          <NivelExperienciaBackend nivel={3} prefix="backend-github-actions" />
+          <span className="nivel-text-github-actions">Intermediário</span>
+        </div>
+        <div className="icon-with-nivel-terraform">
+          <SiTerraform className="terraform-icon" />
+          <NivelExperienciaBackend nivel={3} prefix="backend-terraform" />
+          <span className="nivel-text-terraform">Intermediário</span>
+        </div>
+        <div className="icon-with-nivel-jenkins">
+          <FaJenkins className="jenkins-icon" />
+          <NivelExperienciaBackend nivel={2} prefix="backend-jenkins" />
+          <span className="nivel-text-jenkins">Básico</span>
+        </div>
+        <div className="icon-with-nivel-git">
+          <FaGitAlt className="git-icon" />
+          <NivelExperienciaBackend nivel={3} prefix="backend-git" />
+          <span className="nivel-text-git">Intermediário</span>
         </div>
       </div>
     </div>
   );
+}
+
+const DataScience = () => {
+
+  return (
+    <div className='container-data-science'>
+      <h1>Data Science</h1>
+    <div className="data-science-icons">
+      <div className="icon-with-nivel-python">
+        <FaPython className="python-icon" />
+        <span className="nivel-text-python"></span>
+      </div>
+      <div className="icon-with-nivel-spark">
+        <DiSpark className="spark-icon" />
+        <span className="nivel-text-spark"></span>
+      </div>
+      <div className="icon-with-nivel-mysql">
+        <SiMysql className="mysql-icon" />
+        <span className="nivel-text-mysql"></span>
+      </div>
+      <div className="icon-with-nivel-apache-hadoop">
+        <SiApachehadoop className="apache-hadoop-icon" />
+        <span className="nivel-text-apache-hadoop"></span>
+      </div>
+      <div className="icon-with-nivel-postgresql">
+        <BiLogoPostgresql className="postgresql-icon" />
+        <span className="nivel-text-postgresql"></span>
+      </div>
+      <div className="icon-with-nivel-powerbi">
+        <SiPowerbi  className="powerbi-icon" />
+        <span className="nivel-text-mongodb"></span>
+      </div>
+
+    </div>
+    </div>
+
+
+  )
 }

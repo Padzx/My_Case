@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaReact } from 'react-icons/fa';
 import "./homeComponent.css" 
 
 const Home = () => {
-  const words = ['Frontend.', 'Data Analytics.', 'Devops Engineer.'];
+  const words = ['Frontend.', 'Data Science.', 'Devops Engineer.'];
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [currentWord, setCurrentWord] = useState('');
   const [typingForward, setTypingForward] = useState(true);
