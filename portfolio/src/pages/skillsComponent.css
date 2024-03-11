@@ -36,6 +36,24 @@
   color: #7f00b2; /* Cor do ícone ao passar o mouse */
 }
 
+.three-filter{
+
+  margin-top: -405px;
+  position: absolute;
+  font-size: 23px;
+  margin-left: 660px;
+  animation: slideIn 1s ease forwards;
+  transition: color 0.3s ease; /* Adiciona transição suave */
+}
+
+.three-filter:hover {
+  color: #7f00b2; /* Cor do ícone ao passar o mouse */
+  
+}
+
+.three-filter.active {
+  color: #00A8EF; /* Cor do ícone quando estiver ativo */
+}
 
 
 
@@ -661,8 +679,6 @@
 }
 
 
-
-
 .kubernetes-icon {
 
   position: absolute;
@@ -928,7 +944,7 @@ background: linear-gradient(to right, #00A8EF, #7f00b2);
   margin-top: 445px;
   margin-left: 45px;
   color:#00A8EF;
-  transition: color 0.3s ease; /* Adiciona uma transição suave para a mudança de cor */
+  transition: color 0.3s ease; 
 
 
 }
@@ -951,6 +967,7 @@ background: linear-gradient(to right, #00A8EF, #7f00b2);
 
 
 .container-data-science{
+  
   width: 400px;
   border-radius: 10px;
   margin-top: -365px;
@@ -999,6 +1016,36 @@ background: linear-gradient(to right, #00A8EF, #7f00b2);
 .python-icon:hover {
   color: #7f00b2;
 }
+.backend-python-bolinha,
+.backend-python-bolinha-marcada {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-left: 5  px;
+  margin-top: 61px;
+  transition: background-color 0.3s ease; /* Transição de cor suave */
+}
+
+.backend-python-bolinha {
+  background-color: #00000038; /* Cor padrão das bolinhas */
+}
+
+.backend-python-bolinha-marcada {
+  background-color: #7f00b2; /* Cor das bolinhas marcadas */
+}
+
+.nivel-text-python{
+
+  position: absolute;
+  margin-left: 250px;
+  margin-top: -5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  background: linear-gradient(to right, #00A8EF, #7f00b2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
 
 .spark-icon{
 
@@ -1014,6 +1061,39 @@ background: linear-gradient(to right, #00A8EF, #7f00b2);
   color: #7f00b2;
 }
 
+.backend-spark-bolinha,
+.backend-spark-bolinha-marcada {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-top: 125px;
+  transition: background-color 0.3s ease; /* Transição de cor suave */
+}
+
+.backend-spark-bolinha {
+  background-color: #00000038; /* Cor padrão das bolinhas */
+}
+
+.backend-spark-bolinha-marcada {
+  background-color: #7f00b2; /* Cor das bolinhas marcadas */
+}
+
+.nivel-text-spark{
+
+  position: absolute;
+  margin-left: 250px;
+  margin-top: 58px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  background: linear-gradient(to right, #00A8EF, #7f00b2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+
 .mysql-icon{
 
   position: absolute;
@@ -1027,6 +1107,38 @@ background: linear-gradient(to right, #00A8EF, #7f00b2);
 .mysql-icon:hover {
   color: #7f00b2;
 }
+
+.backend-mysql-bolinha,
+.backend-mysql-bolinha-marcada {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-top: 195px;
+  transition: background-color 0.3s ease; /* Transição de cor suave */
+}
+
+.backend-mysql-bolinha {
+  background-color: #00000038; /* Cor padrão das bolinhas */
+}
+
+.backend-mysql-bolinha-marcada {
+  background-color: #7f00b2; /* Cor das bolinhas marcadas */
+}
+.nivel-text-mysql{
+
+  position: absolute;
+  margin-left: 250px;
+  margin-top: 130px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  background: linear-gradient(to right, #00A8EF, #7f00b2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+
 
 .apache-hadoop-icon{
 
@@ -1043,6 +1155,38 @@ background: linear-gradient(to right, #00A8EF, #7f00b2);
   color: #7f00b2;
 }
 
+.backend-hadoop-bolinha,
+.backend-hadoop-bolinha-marcada {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-top: 280px;
+  transition: background-color 0.3s ease; /* Transição de cor suave */
+}
+
+.backend-hadoop-bolinha {
+  background-color: #00000038; /* Cor padrão das bolinhas */
+}
+
+.backend-hadoop-bolinha-marcada {
+  background-color: #7f00b2; /* Cor das bolinhas marcadas */
+}
+
+.nivel-text-apache-hadoop{
+
+  position: absolute;
+  margin-left: 250px;
+  margin-top: 215px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  background: linear-gradient(to right, #00A8EF, #7f00b2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+
 .postgresql-icon{
 
   position: absolute;
@@ -1057,6 +1201,39 @@ background: linear-gradient(to right, #00A8EF, #7f00b2);
   color: #7f00b2;
 }
 
+.backend-postgresql-bolinha,
+.backend-postgresql-bolinha-marcada {
+
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-top: 360px;
+  transition: background-color 0.3s ease; /* Transição de cor suave */
+
+}
+
+.backend-postgresql-bolinha {
+  background-color: #00000038; /* Cor padrão das bolinhas */
+}
+
+.backend-postgresql-marcada {
+  background-color: #7f00b2; /* Cor das bolinhas marcadas */
+}
+
+.nivel-text-postgresql{
+
+  position: absolute;
+  margin-left: 250px;
+  margin-top: 295px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  background: linear-gradient(to right, #00A8EF, #7f00b2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
 .powerbi-icon{
 
   position: absolute;
@@ -1069,4 +1246,202 @@ background: linear-gradient(to right, #00A8EF, #7f00b2);
 
 .powerbi-icon:hover {
   color: #7f00b2;
+}
+
+.backend-powerbi-bolinha,
+.backend-powerbi-bolinha-marcada {
+
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-top: 450px;
+  transition: background-color 0.3s ease; /* Transição de cor suave */
+
+}
+
+.backend-powerbi-bolinha {
+  background-color: #00000038; /* Cor padrão das bolinhas */
+}
+
+.backend-powerbi-marcada {
+  background-color: #7f00b2; /* Cor das bolinhas marcadas */
+}
+
+.nivel-text-powerbi{
+
+  position: absolute;
+  margin-left: 250px;
+  margin-top: 385px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  background: linear-gradient(to right, #00A8EF, #7f00b2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+.container-aws-cloud{
+
+  width: 400px;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-left: 190px;
+  height: 365px;
+  background-color: #333;
+  animation: slideIn 0.5s ease forwards;
+  overflow-y: auto;
+
+}
+
+.container-aws-cloud::-webkit-scrollbar {
+  width: 10px; /* Largura da barra de rolagem */
+}
+
+.container-aws-cloud::-webkit-scrollbar-thumb::-webkit-scrollbar-thumb {
+  background-color: #7f00b2; /* Cor do polegar da barra de rolagem */
+  border-radius: 10px; /* Raio do polegar da barra de rolagem */
+}
+
+.container-aws-cloud::-webkit-scrollbar-track {
+  background-color: #333; /* Cor do fundo da barra de rolagem */
+}
+
+.ec2-icon{
+
+  position: absolute;
+  font-size: 40px;
+  margin-top: 5px;
+  margin-left: 50px;
+  color:#00A8EF;
+  transition: color 0.3s ease;
+}
+
+.ec2-icon:hover {
+  color: #7f00b2;
+}
+
+.s3-icon{
+
+  position: absolute;
+  font-size: 35px;
+  margin-top: 75px;
+  margin-left: 50px;
+  color:#00A8EF;
+  transition: color 0.3s ease;
+}
+
+.s3-icon:hover {
+  color: #7f00b2;
+}
+
+.rds-icon:hover {
+  color: #7f00b2;
+}
+
+.rds-icon{
+
+  position: absolute;
+  font-size: 40px;
+  margin-top: 145px;
+  margin-left: 46px;
+  color:#00A8EF;
+  transition: color 0.3s ease;
+}
+
+.ec2-icon:hover {
+  color: #7f00b2;
+}
+
+.dynamodb-icon{
+
+  position: absolute;
+  font-size: 40px;
+  margin-top: 220px;
+  margin-left: 50px;
+  color:#00A8EF;
+  transition: color 0.3s ease;
+}
+
+.dynamodb-icon:hover {
+  color: #7f00b2;
+}
+
+.sqs-icon{
+
+  position: absolute;
+  font-size: 40px;
+  margin-top: 293px;
+  margin-left: 46px;
+  color:#00A8EF;
+  transition: color 0.3s ease;
+}
+
+.sqs-icon:hover {
+  color: #7f00b2;
+}
+
+.lambda-icon{
+
+  position: absolute;
+  font-size: 40px;
+  margin-top: 375px;
+  margin-left: 43px;
+  color:#00A8EF;
+  transition: color 0.3s ease;
+}
+
+.lambda-icon:hover {
+  color: #7f00b2;
+}
+
+.ecs-icon{
+
+  position: absolute;
+  font-size: 40px;
+  margin-top: 460px;
+  margin-left: 43px;
+  color:#00A8EF;
+  transition: color 0.3s ease;
+}
+
+.ecs-icon:hover {
+  color: #7f00b2;
+}
+
+
+
+
+
+
+.container-aws-cloud h1 {
+
+  font-size: 35px;
+  background: linear-gradient(to right, #00A8EF, #7f00b2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 97px;
+  margin-top: 5px;
+
+}
+
+
+
+
+
+
+
+.container-others-tools{
+
+  width: 400px;
+  border-radius: 10px;
+  margin-top: -365px;
+  position: absolute;
+  margin-left: 650px;
+  background-color: #333;
+  height: 365px;
+  overflow-y: auto;
+  animation: slideIn 0.5s ease forwards;
 }
