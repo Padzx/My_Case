@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/home';
 import Aboutme from './pages/aboutme';
 import Skills from './pages/skills';
+import Projects from './pages/projects';
 import { ThemeProvider } from './components/ThemeContext'; // Import ThemeProvider
 import './App.css';
 import Navbar from './components/NavBar'; // Import Navbar Component
@@ -41,6 +42,7 @@ const App = () => {
           <Route path="/home" element={<Home />} />
           <Route path="/aboutme" element={<Aboutme />} />
           <Route path="/skills" element={<Skills />} />
+          <Route path="/projects" element={<Projects />} />
         </Routes>
       </Router>
     </ThemeProvider>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { FaHome, FaBook, FaLaptopCode, FaProjectDiagram } from 'react-icons/fa'; 
+import { FaHome, FaBook, FaLaptopCode, FaFolder  } from 'react-icons/fa'; 
 import './NavBarComponent.css';
 
 const Navbar = () => {
@@ -21,7 +21,7 @@ const Navbar = () => {
         <li><NavLink exact to="/home" activeClassName="active"><FaHome /></NavLink></li>
         <li><NavLink to="/aboutme" activeClassName="active"><FaBook /></NavLink></li>
         <li><NavLink to="/skills" activeClassName="active"><FaLaptopCode /></NavLink></li> 
-        <li><NavLink to="/projects" activeClassName="active"><FaProjectDiagram /></NavLink></li> {/* Adicione o ícone para Projects */}
+        <li><NavLink to="/projects" activeClassName="active"><FaFolder /></NavLink></li> {/* Adicione o ícone para Projects */}
       </ul>
     </nav>
   );
